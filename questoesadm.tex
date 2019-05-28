@@ -1,0 +1,168 @@
+  \documentclass[oneside]{book}
+    \usepackage[margin=1in]{geometry} 
+    \usepackage[brazilian]{babel}
+    \usepackage{graphicx}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{amsmath,amsthm,amssymb,amsfonts}
+    \usepackage{enumitem, verbatim}
+    \usepackage{multicol}
+    \usepackage{mathtools}
+    \usepackage{titlesec}
+    \renewcommand{\baselinestretch}{1.5}
+    \usepackage{hyperref, color}
+    \usepackage{float}
+    \usepackage[nottoc,numbib]{tocbibind}
+        \hypersetup{
+            colorlinks=false, %set true if you want colored links
+            linktoc=all,     %set to all if you want both sections and subsections linked
+            linkcolor=blue,  %choose some color if you want links to stand out
+        }
+    \usepackage{listings}
+    \titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
+    \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+    \date{\vspace{-5ex}}
+    \lstset{language=Python}  
+    \usepackage{pythonhighlight}
+     
+    \newcommand{\N}{\mathbb{N}}
+    \newcommand{\Z}{\mathbb{Z}}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \renewcommand{\qedsymbol}{$\blacksquare$}
+    
+     
+    
+\theoremstyle{definition}
+    \newtheorem{problem}{Problema}
+    \newtheorem{dica}{Dica}
+    \newtheorem{gabarito}{Gabarito}
+    \newtheorem{defn}{Definição}
+    \newtheorem{teorema}{Teorema}
+    
+\begin{document}
+    \pagenumbering{gobble}
+
+    \begin{titlepage}
+        \centering 
+        \includegraphics[scale = 0.8]{ufpe.png} \\
+        \Large{\textbf{UNIVERSIDADE FEDERAL DE PERNAMBUCO}}\\
+        \large{Departamento de Eletrônica e Sistemas}
+        \vspace*{\stretch{2.0}}
+   
+        \Huge\textbf{ADMINISTRAÇÃO}\\
+        \Large\textbf{RESENHAS}
+   
+        \vspace*{\stretch{2.0}}
+        \vfill
+        \Large{Matheus Sobreira Farias} \\
+        \Large{Maio, 2019}
+    \end{titlepage}
+\tableofcontents
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+\mainmatter
+            \chapter{Controle}
+            \tab Tem-se uma visão natural sobre o controle como ferramenta de monitoramento e de correção de uma dada tarefa, e é isso que o grupo inicialmente traz à tona. Começando pelo conceito, o grupo atrela à função da administração o papel de gerar informação acerca da atividade para que se julgue o resultado, se foi esperado ou não, e com isso elucidam de forma muito clara e objetiva o contraponto entre controle como forma de monitoramento de atividades, para que realmente siga de forma planejada, e também correção de desvios, que é justamente quando o resultado tende a distoar do esperado, e com isso requer medidas corretivas para diminuir tal desvio. Durante a apresentação, pode-se associar bastante as ideias apresentadas com a Engenharia Eletrônica, na área exatamente de Sistemas de Controle, onde a tarefa de monitoramento de atividades seria feito pela planta de um sistema, enquanto a tarefa de correção de desvios seria atrelada ao feedback, mais precisamente à realimentação negativa do sistema, visto que em um sistema, busca-se minimizar o erro (em geral). \\
+            \tab Logo após a breve introdução do conceito de controle, o grupo tenta trazer a motivação do estudo do controle, sua importância, e traz de maneira bastante didática quando introduz-se a explicação com um exemplo, a do caso da empresa Brenco. Com esse exemplo, o grupo mostra a importância do controle ao elencar o que a falta do controle implicou na empresa Brenco, trazendo uma difícil condição de identificação de desvios na execução, bem como a dificuldade de uma correção efetiva nessas, a Brenco não conseguiu se adequar ao ambiente. É interessante a análise da falta do controle pois é algo bastante impactante numa empresa, e principalmente atrelado ao ambiente interno e externo, é fácil perceber que uma empresa que funcione com base nos preceitos do "jeito Google de trabalhar", deve se atentar bastante ao controle interno, visto que ao deixar os subordinados mais livres e com um viés menos burocrático, este usaria mais de algo interno, pessoal, e portanto não algo tão pre-determinado como seria numa empresa com um viés mais voltado à teoria burocrática de Weber, mais hierarquizado. \\
+            \tab Continuando com os fundamentos do controle, o grupo toma foco na orientação do controle, sendo nesta tipologia o controle visto como o elo de ligação entre indivíduos cujos interesses divergem. Sendo os tipos de controle:
+            \begin{itemize}
+                \item \textbf{Controle de Mercado}: Utilizando-se de parâmetros e mecanismos de mercado (como preços e lucros) define-se claramente produtos e serviços
+                \item \textbf{Controle Burocrático}: Utilizando-se de regras, normas, padrões, etc. Faz com que tenha-se controle das situações mais diversas, essa visão é justamente a já citada relação com Weber
+                \item \textbf{Controle de Clã}: Utilizando-se de valores, tradições e crenças, sustenta-se atrelado à cultura organizacional do sistema a que se está implantada.
+            \end{itemize}
+            \tab Para complementar os fundamentos do controle, se elenca também o controle por nível organizacional, onde se divide em:
+            \begin{itemize}
+                \item \textbf{Controle Estratégico}: Define-se tal controle por monitoramento da organização como um todo, sendo diretamente relacionado com o externo atrelado à missão e à visão da organização.
+                \item \textbf{Controle Tático}: Define-se tal controle pelo uso de mecanismos focando em soluções específicas para cada setor.
+                \item \textbf{Controle Operacional}: Define-se tal controle pelo foco nas atividades operacionais da organização.
+            \end{itemize}
+            \tab Antes de ter visto tal subdivisão, particularmente, só conseguia discernir fundamentalmente o controle como algo voltado mais para o burocrático, o de mercado, e o estratégico, algo que me impactou bastante foi o controle de clã, não havia pensado nessa possibilidade previamente, achei bacana o exposto e imagino a importante diferença numa multinacional ao implantar uma fábrica na Índia e outra nos Estados Unidos por exemplo, o impacto cultural realmente é bastante pesado.\\
+            \tab Com isso, o grupo elucida brevemente os tipos de controle, dividindo-os em antes de ocorrer o problema (preventivo), sendo o controle relacionado a regras, políticas, etc. Durante o processo (simultâneo), que seria o controle realizado por supervisores, gerentes, etc. E após o processo, que seria o feedback ja mencionado, primariamente associado a medidores, sensores, resultados.\\
+            \tab Tendo lecionado uma boa parte da teoria, o grupo, de forma lúdica, enuncia perguntas-desafio para a turma sobre a diferenciação entre tipos de controle relacionaods à orientação e pede-se também que aplique os conceitos de tipos de controle em um time de futebol. Atento ao segundo problema principalmente, pois ao fazer a relação entre o estudo do controle com um hobby que é o futebol, desperta-se bastante interesse e mostra que os conceitos de administração não são monótonos ou restritos, e sim bastante abrangentes e importantes. \\
+            \tab Após o momento lúdico, tem-se agora a análise do processo de controle, sendo assim se abre a visão para estabelecimento de parâmetros, como medir em tempo real, como compara-se o desempenho, como se implementa medidas corretivas, e como corrigir o desempenho atual. Tal parte, apesar de ser bastante intuitiva teoricamente na maioria das situações expostas, talvez seja a parte mais importante do controle, pois, claramente, para controlar, precisa-se entender como realizar o processo. Diante disso, tem-se o desenho do sistema de controle, onde se elenca as variáveis organizacionais como dimensão da organização, cultura, importância da atividade e seus respectivos formatos do sistema, sendo pequeno ou de grande porte, participativa ou coercitiva, elevada ou reduzida, etc. Sendo estes fatores contingenciais, e características abundantes em sistemas de controle eficazes, como precisão, rapidez, foco estratégico, etc.\\
+            \tab Novamente tem-se uma parte lúdica relacionada ao segundo bloco de aula, onde as perguntas-desafio agora são a respeito de etapas do processo de controle, e sua importância, trazer um exemplo onde se deve tomar uma atitude corretiva imediata ou básica e o que se entende por sistemas de controle e sua eficácia. Esta parte me atentou principalmente à terceira pergunta, pois curiosamente estou cursando a disciplina de Sistemas de Controle atualmente, e ao longo de toda apresentação fiz o link com a disciplina, o que me fez aproveitar bastante a aula no geral, por conta desta curiosa coincidência, me senti tentado a participar mais da aula.\\
+            \tab No terceiro e último bloco da apresentação, o foco é voltado para os instrumentos de controle do desempenho organizacional, onde primeiro fala-se sobre tais instrumentos voltados para o sistema mais trivial e clássico de todos: o sistema de controle financeiro. Tal sistema é bastante direto na análise, visto que o sistema precede de ferramentas de análise quantitativas, tem-se a moeda como tal instrumento. Dessa forma, analisar o sistema de controle financeira circunda a relação da moeda no lucro, se determinada ação aumentou o lucro da empresa, então certamente esta ação foi feita de maneira correta, se conseguiu acarretar em maior eficiência e produtividade aquele investimento em determinado conjunto de máquinas, então esta ação também foi positiva para o sistema, estão diretamente associados a esse sistema:
+            \begin{itemize}
+                \item \textbf{Liquidez}: Medição da capacidade de pagar dívidas de curto prazo.
+                \item \textbf{Atividade}: Medição da eficiência da organização em relação à gestão de estoques.
+                \item \textbf{Alavancagem financeira}: Medição da capacidade de cumprir prazos longos.
+                \item \textbf{Rentabilidade}: Medição da eficácia dos ativos na geração de lucros, popularmente conhecido como ROI.
+                \item \textbf{Produtividade}: Medição da eficiência dos trabalhadores.
+                \item \textbf{Mercado}: Medição da fatia do mercado que a organização possui.
+            \end{itemize}
+            \tab Nota-se que, como dito, esse sistema pode ser modelado como um sistema de controle com as variáveis de controle sendo as supracitadas, sua "função objetivo" seria maximizar a moeda, o lucro, dada as condições determinadas pelas variáveis.\\
+            \tab Fala-se também da importância da auditoria no processo, tanto internamente quanto externamente, respectivamente servindo de verificador e avaliador, e também como focar no resultado e na organização como um todo. É citado o popularmente conhecido benchmarking, um processo no qual compara-se as metodologias e práticas de diferentes organizações, não precisando ser necessariamente do mesmo ramo. Achei interessante essa parte quando os integrantes do grupo associaram o benchmarking a grupos de extensão da UFPE, como empresas juniores, citando a importância de se ter um grupo envolvendo todas as outras universidades para se trocar experiências, para exemplificar, trouxe o vídeo do personagem Sr. Zé.\\
+            \tab Sendo assim a apresentação é finalizada com o fator humano no processo de controle, trazendo a ideia de efeitos comportamentais e também as abordagens estratégicas ao controle comportamental, puxando para as tendências contemporâneas do controle, que estão associadas às ja discutidas estratégias de flexibilidade e desempenho socioambiental, "controlando" o aprendizado final da aula com um ultimo conjunto de problemas-desafio. 
+             
+            \chapter{Coordenação}
+            \tab O grupo subidivide o tema de Coordenação em 3 grandes tópicos, sendo eles Coordenação, Mecanismos da Coordenação e Instrumento da Coordenação (Comunicação).\\
+            \tab No tópico de coordenação, o grupo naturalmente inicia a discorrer sobre o conteúdo trazendo a motivação sobre o estudo na área trazendo a célebre frase de Lawrence e Lorsch "“Uma organização é a coordenação de diferentes atividades de contribuintes individuais com a finalidade de efetuar transações planejadas com o ambiente”. E dissertando a ideia de que a harmonia entre esforços individuais, o princípio da definição funcional fazem com que se otimize um processo. Conceitua-se coordenação sob os olhares de Lacombe e Heilborn, ao associar coordenação com o equilíbrio, sincronia e integração das ações dos indivíduos com as atividades organizacionais, permeando certa ordem e método. E com essa definição surge 3 importantes conceitos:
+            \begin{itemize}
+                \item \textbf{Equilibrar}: Balancear duas quantidades, no âmbito organizacional seria proporcionar suficiente quantidade de matéria prima para a produção.
+                \item \textbf{Sincronizar}: Executar tarefas no tempo ideal para seu término, no âmbito organizacional seria não aumentar a velocidade de produção se as vendas estão lentas, um exemplo curioso disso na natureza é no estudo da cinética química, quando uma reação é dividida em várias etapas, a etapa que determina a velocidade de equilíbrio é a etapa mais lenta de todas.
+                \item \textbf{Integrar}: Unificar esforços individuais, no âmbito organizacional seria por exemplo identificar um trending mundial e focar intensamente em entregar algum produto que esteja relacionado a isso.
+            \end{itemize}
+            \tab Para assegurar que foi entendido o primeiro bloco de conteúdo, o grupo sugere problemas-desafio de aplicação dos conceitos abordados até então de equilíbrio, sincronia e integração em determinadas situações-problema.\\
+            \tab Agora no tópico de Mecanismos da Coordenação, inicia-se a apresentação dissertando sobre os mecanismos separando-os em:
+            \begin{itemize}
+                \item \textbf{Ajuste espontâneo}: Um mecanismo mais simples e abrangente, podendo ser formal ou informal, que ressalta a importância da comunicação voluntária informal, ou seja, pessoas trocando informações sobre necessidades e dificuldades, etc.
+                \item \textbf{Organização}: Um mecanismo mais complexo, estabelece padrões, metas, quantidades, ressalta a importância do treinamento para os trabalhadores, assegurando mais certeza no resultado, traz a clareza das responsabilidades e atribuições, etc.
+            \end{itemize}
+            \tab Para finalizar tal bloco, o grupo traz enfaticamente que não se usa apenas um mecanismo, e sim diversos mecanismos nas organizações, desde os mais simples, ate os mais complexos, concordo bastante quando fala-se que todos os mecanismos tem sua importância, e que o interessante é varia caso a caso, o uso de todos em conjunto é bastante importante e positivo. E da mesma maneira que com o bloco anterior, o grupo traz situações-problema para elencar cada caso a um tipo de mecanismo de coordenação.\\
+            \tab No terceiro e último tópico, o grupo enfatiza a importância da comunicação, visto que este é o meio com o qual se torna possível a coordenação das atividades de uma empresa e traz de maneira brilhante a relação com a Engenharia Eletrônica ao colocar uma imagem no slide em que se contrapõe com o conceito de canal de comunicação das telecomunicações, onde se existe o emissor e o recepetor, o canal com o qual se comunicam, ruídos e o feedback. Se enfatiza a necessidade de que a comunicação seja estabelecidade de forma clara, seja textualmente, em voz. O uso de jargões com cuidado, o não uso de frases prolixas é o desejável.\\
+            \tab Em uma empresa, usa-se os variados meios de comunicação o tempo todo, seja diretamente com líderes e subordinados, seja em murais, avisos importantes. Seja e-mails com reuniões marcadas, pode ser alguma reunião online via hangouts ou skype, jornais internos, relatórios digitados e impressos. Certamente, dos supracitados, o imutável e livre de erros (se bem escrito), é a própria escrita digitada, pois neste meio torna-se erros de comunicação como o clássico telefone-sem-fio algo impossível.\\
+            \tab Nota-se também a importância da filtragem na comunicação, suponha por exemplo um extremista religioso da religião X ouvir a fala de um ateu ou alguém de outra religião. Por mais claro que o emissor possa ser, o receptor devido a suas crenças fortementes atrelados a sua cultura, não vai gerar um bom canal, podendo até interpretar mal, isso pode ser aplicado a uma organização também.\\
+            \tab E claro, ressaltar a importância do feedback num canal de comunicação, se foi bem entendido o problema discutido entre o líder e o subordinado, se o projeto final foi bem escrito, se a internet está boa para que haja uma reunião online, o que precisa-se melhorar para uma próxima tentativa, etc.\\
+            \tab Para finalizar o bloco, desta vez o grupo não aplica situações-problema, mas sim faz perguntas sortidas para os alunos, buscando averiguar se receberam bem a aula, se tem dúvidas, justamente aplicando um dos conceitos vistos na aula, que seria o do feedback, e sendo assim, terminam revisando as partes principais da aula.
+            
+        \chapter{Direção: Grupo e Motivação}
+        \tab Nota-se que este grupo busca um maior enfoque acadêmico, com definições carregadas e bem explícitas. O grupo inicia a aula com a apresentação de um sumário definindo os 4 blocos da aula, sendo eles os fundamentos da direção, base do comportamento individual nas organizações, bases do comportamento em grupo nas organizações e motivação.\\
+        \tab No primeiro bloco naturalmente se define direção como a orientação de esforços individuais para o propósito comum, realiza-se o contraponto bem feito com a abordagem comportamental das teorias da administração e também se discute sobre a relação entre comportamentos individuais e comportamentos em grupo.\\
+        \tab Muitas vezes, durante um trabalho em grupo, seja do que for, não se pode incisivamente ser exatamente igual a um trabalho individual, muitas vezes algumas particularidades do trabalho individual não encaixam bem num trabalho em grupo, a grande dificuldade no fim é unir todas as características individuais para finalizar como um grupo, a grande vantagem é que em grupo se consegue dividir tarefas e otimiza-se o tempo, portanto é uma dificuldade que vale a pena de ser trabalhada.\\
+        \tab Passando para o segundo bloco, se caracteriza as principais bases do comportamento individual nas organizações:
+        \begin{itemize}
+            \item \textbf{Atitudes}: Representam predisposições dos individuos perante objetos, pessoas, eventos ou situações. Estão relacionadas com os componentes cognitivos do indivíduo, com sua satisfação com o trabalho, envolvimento e comprometimento.
+            \item \textbf{Personalidade}: Refere-se ao conjunto de características psicológicas estáveis que caracteriza um indivíduo e o difere de outrém, reflete-se no seu comportamento. Está fortemente atrelado ao conceito de inteligência emocional. Nesse momento o grupo cita com maestria o modelo dos 5 fatores (extroversão, agradabilidade, senso de responsabilidade, estabilidade emocional e abertura a novas experiências), que são basicamente os 5 pilares da personalidade.
+            \item \textbf{Percepção}: Processo cognitivo com o qual os indivíduos organizam e interpretam seus sentidos. Está relacionado ao processo de percepção, tal base do comportamento é perigosa ao se destacar a possibilidade de distorções perceptuais, pois tal distorção, como o próprio nome sugere, faz com que se interprete de forma errônea o que se quer passar.
+            \item \textbf{Aprendizagem}: Processo bastante importante numa organização, é o processo com o qual habilidades, conhecimentos, competências são adquiridas por um indivíduo. É expressivo numa organização pois naturalmente um novo empregado não sabe muito bem como lidar com grande parte do ofício o qual o será destinado, disso, é importante que ele sempre esteja disposto a aprender.
+        \end{itemize}
+        \tab No terceiro bloco, o grupo explicita a diferença entre grupos formais e grupos informais:
+        \begin{itemize}
+            \item \textbf{Grupos formais}: Tais grupos são aqueles determinados pela organização para realizar as atividades propostas, é por exemplo um grupo formal o grupo de marketing da empresa, visto que os indivíduos que compõem este grupo foram pre-determinados por um processo seletivo sugerido pela empresa.
+            \item \textbf{Grupos informais}: Tais grupos são aqueles que naturalmente se formam em uma organização por conta de afinidades, culturas parecidas, boas relações de trabalho, etc. É deste grupo que forma-se as amizades numa organização.
+        \end{itemize}
+        \tab Tem-se então, assim como nos comportamentos individuais, as bases do comportamento em grupo:
+        \begin{itemize}
+            \item \textbf{Papeis}: Como o próprio nome sugere, é o ofício a que é destinado para o indíviduo, é o que a organização define que o indivíduo terá que fazer.
+            \item \textbf{Normas}: Para realizar determinado papel, os indivíduos da organização são submetidos a normas de controle, um exemplo seria apenas realizar o ofício utilizando EPIs, para que o indivíduo realiza tal tarefa de maneira segura.
+            \item \textbf{Status}: É o sinônimo de hierarquia, o status define em que posição de importância o indivíduo se aloca na organização, diferentes status determinam diferentes papéis e diferente importância na voz.
+            \item \textbf{Coesão}: É a força que rege a relação entre os integrantes do grupo, é o que faz a motivação permear o grupo, e sendo assim impulsionar a atividade.
+        \end{itemize}
+        \tab No último bloco, o grupo inicia a fala sobre motivação. A motivação seria a força interna que precede e leva à ação, é importantíssimo que a organização mantenha seus trabalhadores sempre motivados, pois é fato que isto leva a uma maior eficácia e eficiência na produção da empresa.\\
+        \tab O grupo ressalta a mudança na visão da motivação ao longo das teorias da administração ao fazer o contraponto que na época da administração clássica de Fayol, e científica de Taylor e Ford, a motivação que era imposta para os trabalhadores era que se produzissem mais, receberiam bonificação de salário. Conforme o passar dos anos e a mudança nas teorias, as organizações viram a importância dos indivíduos estarem trabalhando não so pelo dinheiro, mas que se sintam confortáveis em fazer o trabalho que fazem, que se sintam desafiados e felizes por cumprirem seus trabalhos, essa seria a verdadeira motivação, com a teoria das relações humanas foi visto o indivíduo de forma mais vertical, a organização passa a visualizar o indivíduo e seus problemas internos, a satisfazer suas necessidades. E portanto o grupo apresenta a importante pirâmide de Maslow da motivação, onde um indivíduo estaria motivado se fosse cumprido as 5 necessidades:
+        \begin{itemize}
+            \item \textbf{Fisiológica}: Está relacionada com as necessidades básicas do ser humano: ter higiene em geral, comida, água, férias, salário, etc.
+            \item \textbf{Segurança e estabilidade}: Está relacionado com sua proteção: a necessidade da disponibilidade de equipamentos de segurança, o próprio lugar de trabalho ser um lugar seguro, e não só fisicamente, mas também segurança e estabilidade emocional, ou seja, o indivíduo se sentir a vontade para realizar seu ofício, sem ter a pressão de ter aquele trabalho para sustentar a família por exemplo.
+            \item \textbf{Social}: Está relacionado com a necessidade do ser humano de ter contato com outros indivíduos, é ter a possibilidade de criar vinculos de amizade, coleguismo na profissão, ter um verdadeiro bom ambiente de trabalho.
+            \item \textbf{Autoestima}: Está relacionado com o prestígio que é dado ao funcionário na empresa, seu status em relação à equipe e a valorização de sua importância na organização
+            \item \textbf{Autorrealização}: Está relacionado com o estágio maior da pirâmide, quando o indivíduo ja goza de todos os outros níveis da pirâmide e se sente satisfeito por completo com o trabalho, tendo um salário bom, seguro, com boas relações, e sendo valorizado.
+        \end{itemize}
+        \tab Ainda nas teorias, o grupo discorre sobre a teoria ERC de Alderfer, onde o indivíduo possui as necessidades relacionais, que são as necessidades de ter relações interpessoais, e as necessidades de crescimento, que são as de construir o potencial individual da carreira do indivíduo. E para finalizar, tem-se também a teoria dos dois fatores de Herzberg, onde os indivíduos são motivados ou desmotivados pelos fatores higiênicos, que seriam as necessidades básicas, são os fatores que caso estejam presentes, não motivam o indivíduo, mas a falta deles cria uma grande desmotivação, e os fatores motivacionais, esses sim são os que se estiverem presentes cria uma verdadeira motivação para o indivíduo, mas caso não esteja presente, não cria desmotivação.
+        
+           
+        \begin{thebibliography}{9}
+            \bibitem{sobral} 
+                SOBRAL, F.; PECI, A. 
+            \textit{Administração: teoria e prática no contexto brasileiro.}
+                São Paulo: Pearson Prentice Hall, 2008.
+        
+            \bibitem{vera1}
+                \textit{Slides das aulas.}
+            
+            \bibitem{vera}
+                \textit{Apresentações em sala.}
+         
+        \end{thebibliography}
+
+
+	        
+\end{document}
