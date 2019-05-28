@@ -1,5 +1,5 @@
 # Projetos LaTeX
 Todos os trabalhos de LaTeX feitos por Matheus Farias
 
-# ADM
-Pasta que envolve os trabalhos de ADM
+## adm
+Pasta que envolve os trabalhos da disciplina de Administração

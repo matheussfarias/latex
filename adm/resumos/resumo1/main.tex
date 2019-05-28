@@ -1,0 +1,97 @@
+  \documentclass[14pt, oneside]{article}
+    \usepackage[margin=1in]{geometry} 
+    \usepackage[brazilian]{babel}
+    \usepackage{graphicx}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{amsmath,amsthm,amssymb,amsfonts}
+    \usepackage{enumitem, verbatim}
+    \usepackage{multicol}
+    \usepackage{mathtools}
+    \usepackage{titlesec}
+    \usepackage{hyperref, color}
+    \usepackage{float}
+    \usepackage[nottoc,numbib]{tocbibind}
+        \hypersetup{
+            colorlinks=false, %set true if you want colored links
+            linktoc=all,     %set to all if you want both sections and subsections linked
+            linkcolor=blue,  %choose some color if you want links to stand out
+        }
+    \usepackage{listings}
+    \titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
+    \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+    \date{\vspace{-5ex}}
+    \lstset{language=Python}  
+    \usepackage{pythonhighlight}
+     
+    \newcommand{\N}{\mathbb{N}}
+    \newcommand{\Z}{\mathbb{Z}}
+    \newcommand\tab[1][1cm]{\hspace*{#1}}
+    \renewcommand{\qedsymbol}{$\blacksquare$}
+    
+     
+    
+\theoremstyle{definition}
+    \newtheorem{problem}{Problema}
+    \newtheorem{dica}{Dica}
+    \newtheorem{gabarito}{Gabarito}
+    \newtheorem{defn}{Definição}
+    \newtheorem{teorema}{Teorema}
+    
+\begin{document}
+    \pagenumbering{gobble}
+
+    \begin{titlepage}
+        \centering 
+        \includegraphics[scale = 0.8]{ufpe.png} \\
+        \Large{\textbf{UNIVERSIDADE FEDERAL DE PERNAMBUCO}}\\
+        \large{Departamento de Eletrônica e Sistemas}
+        \vspace*{\stretch{2.0}}
+   
+        \Huge\textbf{ADMINISTRAÇÃO}\\
+        \Large\textbf{RESUMO DOS CAPÍTULOS}
+   
+        \vspace*{\stretch{2.0}}
+        \vfill
+        \Large{Matheus Sobreira Farias} \\
+        \\~\\
+        \Large{Março, 2019}
+    \end{titlepage}
+
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+\mainmatter
+            \section{Conceitos Iniciais}
+                \tab Sobral inicia seu texto problematizando a importância da organização, e com isso, imediatamente estabelece a importância da relação de mutualismo entre a organização e o administrador, porém, colocando em cheque a dúvida do porque seria importante estudar a administração e porque tal atividade é tão importante, disso, precisa-se primeiro conceituar organização. "As organizações são grupos estruturados de pessoas que se juntam para alcançar objetivos comuns... Podem ser organizações formais, como no caso de um exército ou de uma empresa, ou informais, como um grupo de amigos que se junta para jogar vôlei na praia." \cite{sobral} e "Organização é um grupo de pessoas que se constitui de forma organizada para atingir objetivos comuns" \cite{lacombe}. Note que, com a definição de Sobral tem-se uma visão bastante ampla de organização, na sala de aula, a definição mais acordada foi que a organização seria uma entidade com missão e valores, mas não foi bem atentado para o exemplo de uma organização informal, e sim trazendo mais uma ideia de empresas com ou sem fins lucrativos. \\
+                \tab Para Sobral, a organização necessita de pessoas, propósito e estrutura, no caso do exemplo dos amigos jogando vôlei de praia, pode-se caracterizar as pessoas como os amigos, o propósito seria uma diversão em grupo e a estrutura seria composta pelas regras do esporte. Bem entendido o conceito de organização, passa-se a analisar o conceito de administração. \\
+                \tab "Administração é um processo que consiste na coordenação do trabalho dos membros da organização e na alocação dos recursos organizacionais para alcançar os objetivos estabelecidos de uma forma eficaz e eficiente" \cite{sobral}. Para entender melhor tal conceito um exemplo interessante é o de um administrador de uma empresa como o Facebook. Quanto ao processo, o administrador do Facebook precisa estabelecer atividades e tarefas para atingir o objetivo da empresa, que seria conectar o mundo através de sua rede social, tais atividades e tarefas são designadas aos empregados da empresa, que são separados por meio da coordenação do trabalho. Cada parte da empresa deve funcionar de maneira interdependente, ou seja, o programador faz sua parte, porém, deve entender que o designer ao criar seu modelo, deve ser tal que seja compatível com a programação feita, e disso o administrador tem o papel de coordenar, fazer com que a coerência entre os processos seja estabelecida. E por fim que essas etapas sejam eficazes e eficientes, ou seja, otimizando recursos e minimizando de forma a ter um alto desempenho e que que cumpram as metas, no caso do Facebook, seria fazer relatórios para justificar que a compra de determinada máquina facilitaria e aumentaria o desempenho de um programador, ou que até a contratação de novos designers seria necessário para a elaboração de um novo produto da empresa, etc. \\
+                
+            \section{O Administrador}
+                \tab As atividades básicas de um administrador não estão necessariamente puramente relacionadas ao presidente e aos diretores da organização, é um fato que as funções de um administrador devem estar em torno de várias seções e segmentos de uma empresa, sendo exercida por gerentes, lideres de equipe, etc. Sendo, claro, que nem todas as pessoas que trabalham na organização são administradores. Tais atividades, portanto, giram em torno de conduzir determinado grupo a atingir seus objetivos. Sendo a organização dividida em 4 níveis: \\
+                \tab \textbf{Nível estratégico}: é o nivel que atua na estratégia da organização, sendo que tal tarefa abrange toda a organização, tal nível é administrado pelos chamados administradores de topo, ou seja, presidentes e diretores, no exemplo do Facebook seria Mark Zuckerberg, o CEO. \\
+                \tab \textbf{Nível tático}: é o nivel que atua nas táticas da organização, sendo o foco em uma unidade ou em uma área funcional, são administradores por gerentes. No exemplo do Facebook, pode-se caracterizar o gerente de marketing digital da empresa. \\
+                \tab \textbf{Nível operacional}: é o nivel que atua nas operações da empresa, ou seja, especificamente em uma operação ou tarefa, são administrados por supervisores. No exemplo do Facebook, pode-se caracterizar uma tarefa dada a um grupo de designers para elaborar um panfleto de divulgação de um evento da empresa, e para checar se o trabalho está sendo realizado de forma eficaz e eficiente, um supervisor estaria associado a tal tarefa. \\
+                \tab \textbf{Execução - Trabalhadores e operários}: é o nivel mais básico, sendo este o responsável por executar as tarefas. No exemplo do Facebook seria os designers que receberam a tarefa de elaborar um panfleto de divulgação. \\
+                \tab Também é importante divisão feita pelo administrador francês Henri Fayol das funções da admininstração, divindo-a em 4 áreas: \\
+                \tab \textbf{Planejamento}: É a área que define os objetivos, as estratégias e ações para alcançá-los. Por exemplo a criação de um evento de divulgação para o Facebook. Para divulgá-lo precisa-se de marketing digital, para ocorrer o evento fisicamente, precisa-se de uma estrutura, do espaço, de palestrantes, etc. Tudo isso seria estabelecido através de um planejamento. \\ 
+                \tab \textbf{Organização}: Uma vez planejado, é necessário o estabelecimento de uma organização da equipe. Quem será responsável por qual etapa do trabalho de uma determinada função, e também quem será a autoridade que terá a responsabilidade de tomar liderança sobre tal área. \\
+                \tab \textbf{Direção}: É a área que está relacionada com a gestão de pessoas. Uma vez estabelecido o líder, este será o responsável por tornar o ambiente agradável e propício para que seus subordinados estejam motivados e satisfeitos, sendo também a função que lida com possíveis conflitos. \\
+                \tab \textbf{Controle}: Tendo o ambiente propício, o planejamento bem feito e as funções bem delegadas, a organização agora deve buscar o resultado esperado, e para isso, a área de Controle visa, justamente, assegurar que estes objetivos estão sendo devidamente alcançados. \\
+                \tab Uma análise interessante é a do perfil de um administrador brasileiro feita no texto de Sobral, sendo este caracterizado por ser alguém bastante flexível (jeitinho brasileiro), ter medo da mudança, sendo um perfil mais não-empreendedor, tendo uma liderança carismática e com forte relação pessoal, típico do brasileiro de ser conhecido por um povo acolhedor, que tem sua autoridade como forma de estabelecer e manter a ordem, e que esta autoridade seja com um aspecto de lider autocrático, e que também não valoriza os mais merecedores mas que também não pune os ineficientes, trazendo um clima de baixa motivação.
+
+
+        \begin{thebibliography}{9}
+            \bibitem{sobral} 
+                SOBRAL, F.; PECI, A. 
+            \textit{Administração: teoria e prática no contexto brasileiro.}
+                São Paulo: Pearson Prentice Hall, 2008.
+        
+            \bibitem{lacombe} 
+                LACOMBE, F. J. M.; HEILBORN, G. L. J. 
+                \textit{Administração: princípios e tendências}. 
+                2ed. rev. e atual. São Paulo: Saraiva, 2008.
+         
+        \end{thebibliography}
+
+
+	        
+\end{document}
