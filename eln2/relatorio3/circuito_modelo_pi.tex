@@ -1,0 +1,36 @@
+	%\centering%
+		\begin{tikzpicture}[circuit ee IEC, scale=0.5066666667,line width=.5pt]% default: 0.4
+	%\tikzstyle{every node}=[font=\small];%
+	%\node [draw] at (0.0,0.0) {\pgfkeysvalueof{/tikz/circuitikz/tripoles/op amp/font}};
+\draw [/lt2ti/Net](-1.0,-4.5)to[,*-, color=netcolor] (-3.5,-4.5);% wire w3
+\draw [/lt2ti/Net](1.5,-4.5)to[*short,-*, color=netcolor] (-1.0,-4.5);% wire w4
+\draw [/lt2ti/Net](9.0,-4.5)to[*short,*-, color=netcolor] (5.5,-4.5);% wire w5
+\draw [/lt2ti/Net](12.0,-5.0)to[*short,-, color=netcolor] (12.0,-5.0);% wire w6_w7 start
+\draw [/lt2ti/Net](9.0,-4.5)to[*short,-*, color=netcolor] (9.0,-4.5);% wire w6_w7 end
+\draw [/lt2ti/Net](12.0,-5.0) --  (12.0,-4.5) -- (9.0,-4.5); % wire w6_w7 polyline 
+\draw [/lt2ti/Net](-3.5,-7.5)to[*short,-, color=netcolor] (-3.5,-7.0);% wire w8
+\draw [/lt2ti/Net](-1.0,-7.5)to[*short,-, color=netcolor] (-1.0,-7.0);% wire w9
+\draw [/lt2ti/Net](3.5,-8.0)to[*short,*-, color=netcolor] (3.5,-8.0);% wire w10_w11 start
+\draw [/lt2ti/Net](1.5,-7.0)to[*short,-, color=netcolor] (1.5,-7.0);% wire w10_w11 end
+\draw [/lt2ti/Net](3.5,-8.0) --  (1.5,-8.0) -- (1.5,-7.0); % wire w10_w11 polyline 
+\draw [/lt2ti/Net](5.5,-8.0)to[*short,*-, color=netcolor] (5.5,-7.0);% wire w12
+\draw [/lt2ti/Net](5.5,-8.0)to[*short,*-*, color=netcolor] (3.5,-8.0);% wire w13
+\draw [/lt2ti/Net](9.0,-7.0)to[*short,-, color=netcolor] (9.0,-7.0);% wire w14_w15 start
+\draw [/lt2ti/Net](5.5,-8.0)to[*short,-*, color=netcolor] (5.5,-8.0);% wire w14_w15 end
+\draw [/lt2ti/Net](9.0,-7.0) --  (9.0,-8.0) -- (5.5,-8.0); % wire w14_w15 polyline 
+\draw [/lt2ti/Net](12.0,-8.0)to[*short,-, color=netcolor] (12.0,-7.5);% wire w16
+\draw [/lt2ti/Net](3.5,-11.0)to[*short,-, color=netcolor] (3.5,-10.5);% wire w17
+ \draw (-1.0, -7.5) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (-3.5, -7.5) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (3.5, -11.0) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (12.0, -8.0) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+  \draw (9.0, -4.5) to[*resistor, l^=R\textsubscript{F}, a_=, *-, ] (9.0,-7.0){}; %\node [] at (8.5,-4.0) {x}; % component "res" "R1" 
+  \draw (12.0, -5.0) to[*resistor, l^=$R_{L'}$, a_=, -, ] (12.0,-7.5){}; %\node [] at (11.5,-4.5) {x}; % component "res" "R2" 
+  \draw (3.5, -8.0) to[*resistor, l^=R\textsubscript{E\textsubscript{1}}, a_=, *-, ] (3.5,-10.5){}; %\node [] at (3.0,-7.5) {x}; % component "res" "R3" 
+  \draw (1.5, -4.5) to[*resistor, l^=, a_=$r_{\pi}$, -, ] (1.5,-7.0){}; %\node [] at (1.0,-4.0) {x}; % component "res" "R4" 
+  \draw (-1.0, -4.5) to[*resistor, l^=, a_=$R_{B}$, *-, ] (-1.0,-7.0){}; %\node [] at (-1.5,-4.0) {x}; % component "res" "R5" 
+  %\draw (5.5, -4.5) to[*I, l=I1, a=, , rotate=0,] (5.5,-7.0){}; % component "current" "I1" 
+  \draw (5.5, -4.5) to[*I, l=, a=$gm V_{\pi}$,, -, ] (5.5,-7.0){}; % component "current" "I1" 
+  \draw (-3.5, -4.5) to[*V, l_=$V_{sig}$, a^=,, -, ] (-3.5,-7.0){}; % component "voltage" "V1" 
+
+	\end{tikzpicture}

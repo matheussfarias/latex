@@ -1,0 +1,69 @@
+	%\centering%
+		\begin{tikzpicture}[circuit ee IEC, scale=0.4666666667,line width=.5pt]% default: 0.4
+	%\tikzstyle{every node}=[font=\small];%
+	%\node [draw] at (0.0,0.0) {\pgfkeysvalueof{/tikz/circuitikz/tripoles/op amp/font}};
+\draw [/lt2ti/Net](9.5,-3.0)to[*short,*-, color=netcolor] (9.5,-2.5);% wire w3
+\draw [/lt2ti/Net](4.5,-1.0)to[,*-, color=netcolor] (4.5,0.0);
+\draw [/lt2ti/Net](9.5,-3.0)to[*short,*-, color=netcolor] (8.5,-3.0);% wire w4
+\draw [/lt2ti/Net](10.0,-3.0)to[*short,-*, color=netcolor] (9.5,-3.0);% wire w5
+\draw [/lt2ti/Net](12.5,-3.0)to[*short,*-, color=netcolor] (12.0,-3.0);% wire w6
+\draw [/lt2ti/Net](12.5,-3.0)to[*short,*-, color=netcolor] (12.5,-3.0);% wire w18_w19 start
+\draw [/lt2ti/Net](11.5,-7.0)to[*short,-, color=netcolor] (11.5,-7.0);% wire w18_w19 end
+\draw [/lt2ti/Net](12.5,-3.0) --  (12.5,-7.0) -- (11.5,-7.0); % wire w18_w19 polyline 
+\draw [/lt2ti/Net](13.0,-3.0)to[*short,-*, color=netcolor] (12.5,-3.0);% wire w7
+\draw [/lt2ti/Net](15.5,-3.0)to[*short,-, color=netcolor] (15.0,-3.0);% wire w8
+\draw [/lt2ti/Net](1.5,-4.5)to[*short,-, color=netcolor] (0.0,-4.5);% wire w9
+\draw [/lt2ti/Net](4.5,-4.5)to[*short,*-, color=netcolor] (4.5,-3.5);% wire w10
+\draw [/lt2ti/Net](4.5,-4.5)to[*short,*-, color=netcolor] (3.5,-4.5);% wire w11
+\draw [/lt2ti/Net](6.5,-4.5)to[*short,-, color=netcolor] (6.5,-4.5);% wire w12_w13 start
+\draw [/lt2ti/Net](4.5,-4.5)to[*short,-*, color=netcolor] (4.5,-4.5);% wire w12_w13 end
+\draw [/lt2ti/Net](6.5,-4.5) --  (5.0,-4.5) -- (4.5,-4.5); % wire w12_w13 polyline 
+\draw [/lt2ti/Net](0.0,-5.0)to[*short,-, color=netcolor] (0.0,-4.5);% wire w14
+\draw [/lt2ti/Net](4.5,-5.5)to[*short,-*, color=netcolor] (4.5,-4.5);% wire w15
+\draw [/lt2ti/Net](8.5,-7.0)to[*short,*-, color=netcolor] (8.5,-6.0);% wire w16
+\draw [/lt2ti/Net](9.0,-7.0)to[*short,-*, color=netcolor] (8.5,-7.0);% wire w17
+\draw [/lt2ti/Net](8.5,-7.5)to[*short,-*, color=netcolor] (8.5,-7.0);% wire w20
+\draw [/lt2ti/Net](4.5,-8.5)to[*short,-, color=netcolor] (4.5,-8.0);% wire w21
+\draw [/lt2ti/Net](8.5,-10.5)to[*short,*-, color=netcolor] (8.5,-10.0);% wire w22
+\draw [/lt2ti/Net](8.5,-11.0)to[*short,-*, color=netcolor] (8.5,-10.5);% wire w24
+\draw [/lt2ti/Net](15.5,-5.9)to[-*, color=netcolor] (15.5,-6.4);
+\draw [/lt2ti/Net](15.5,-3.0)to[-*, color=netcolor] (15.5,-3.4);
+\draw [/lt2ti/Net](10.5,-11.0)to[*short,-, color=netcolor] (10.5,-11.0);% wire w23_w25 start
+\draw [/lt2ti/Net](8.5,-10.5)to[*short,-*, color=netcolor] (8.5,-10.5);% wire w23_w25 end
+\draw [/lt2ti/Net](10.5,-11.0) --  (10.5,-10.5) -- (8.5,-10.5); % wire w23_w25 polyline 
+\draw [/lt2ti/Net](8.5,-14.0)to[*short,-, color=netcolor] (8.5,-13.5);% wire w26
+\draw [/lt2ti/Net](10.5,-14.0)to[*short,-, color=netcolor] (10.5,-13.0);% wire w27
+ \draw (4.5, -8.5) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (8.5, -14.0) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (15.5, -6.4) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (0.0, -7.5) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+ \draw (10.5, -14.0) node[ground, xscale=2, yscale=2, rotate=270, ] (undefined) {};%  (undefined)++(0.0,0.0) node {undefined }; % component "circuiTikz\\gnd" "undefined" 
+  \draw (4.5, -1.0) to[*resistor, l^=R\textsubscript{1}, a_=$10  k\Omega$, -, ] (4.5,-3.5){}; %\node [] at (4.0,-0.5) {x}; % component "res" "R1" 
+  \draw (4.5, -5.5) to[*resistor, l^=R\textsubscript{2}, a_=$4.7 k\Omega $, -, ] (4.5,-8.0){}; %\node [] at (4.0,-5.0) {x}; % component "res" "R2" 
+ \draw (8.5, -4.5) node[npn, nobodydiode, , rotate=0, ] (Q1) {}   (Q1)++(1.0,1) node {}; % component "npn" "Q1" 
+ \draw (6.5, -4.5) to [*short, -] (Q1.B); \draw (8.5, -6.0) to [*short, -] (Q1.E); \draw (8.5, -3.0) to [*short, -] (Q1.C);% extend wires to the connection points   % component "npn" "Q1" 
+  \draw (8.5, -11.0) to[*resistor, l^=, a_=R\textsubscript{E\textsubscript{2}} \newline $10 \: k\Omega$, -, ] (8.5,-13.5){}; %\node [] at (8.0,-10.5) {x}; % component "res" "R3" 
+  \draw (9.5, 0.0) to[*resistor, l^=R\textsubscript{C}, a_=$2.2 \: k\Omega$, -, ] (9.5,-2.5){}; %\node [] at (9.0,0.5) {x}; % component "res" "R4" 
+  %\draw (4.5, -1.0) to[*V, l_=V2, a^=10,, -, ] (4.5,1.5){}; % component "voltage" "V2" 
+  \draw  --++(4.5,0.0) node[vcc]{+\,\textnormal{V\textsubscript{CC}}} to (4.5,0.0){};
+  \draw (3.5, -4.5) to[*capacitor, l^=C\textsubscript{in}, a_=, -, ] (1.5,-4.5){}; % component "cap" "C1" 
+  %\node [] at (3.5,-4.0) {x}; % component "cap" "C1" 
+  \draw (15.0, -3.0) to[*capacitor, l^=, a_=C\textsubscript{A}, -, ] (13.0,-3.0){}; % component "cap" "C2" 
+  %\node [] at (15.0,-2.5) {x}; % component "cap" "C2" 
+  \draw (15.5, -3.4) to[*resistor, l^=R\textsubscript{L} , a_=$2.2 \: k\Omega$, -, ] (15.5,-5.9){}; %\node [] at (15.0,-2.5) {x}; % component "res" "R5" 
+  \draw (10.5, -13.0) to[*capacitor, l^=, a_=C\textsubscript{E}, -, ] (10.5,-11.0){}; % component "cap" "C3" 
+  %\node [] at (11.0,-13.0) {x}; % component "cap" "C3" 
+  \draw (0.0, -5.0) to[*V, l_=$V_{sig}$, a^,, -, AC 10m] (0.0,-7.5){}; % component "voltage" "V1" 
+  \draw (12.0, -3.0) to[*capacitor, l^=C\textsubscript{out}, a_=, -, ] (10.0,-3.0){}; % component "cap" "C4" 
+  %\node [] at (12.0,-2.5) {x}; % component "cap" "C4" 
+  \draw (8.5, -7.5) to[*resistor, l^=$10 \: \Omega$, a_=R\textsubscript{E\textsubscript{1}}, -, ] (8.5,-10.0){}; %\node [] at (8.0,-7.0) {x}; % component "res" "R6" 
+  \draw (11.5, -7.0) to[*resistor, l^=R\textsubscript{F}, a_=$100 \: \Omega$, -, ] (9.0,-7.0){}; %\node [] at (12.0,-6.5) {x}; % component "res" "R7" 
+  %\draw (9.5, 0.0) to[*V, l_=V3, a^=10,, -, ] (9.5,2.5){}; % component "voltage" "V3" 
+  \draw  --++(9.5,0.0) node[vcc]{+\,\textnormal{V\textsubscript{CC}}} to (9.5,0.0){};
+  \node (i) [] at (5.0,-4.5) {};% label mark % label "" "i" lbl30 
+ % \node (itxt) [ netlabelcolor, above= -0.24cm of i] {{\pgfkeysvalueof{/lt2ti/netlabel/font}i}}; % label "" "i" lbl30 
+  \node (lbl109) [] at (-0.1687,-9.75) {};% text mark % text "" ".ac dec 100 1 500k lbl109 " 
+  \node (lbl109txt) [ lttotitextcolor, right= -0.0cm of lbl109, scale=0.5*2.0] %{{\pgfkeysvalueof{/lt2ti/text/font}.ac dec 100 1 500k}}; % text "" ".ac dec 100 1 500k lbl109 " 
+
+	\end{tikzpicture}
+
