@@ -1,5 +1,5 @@
 # Projetos LaTeX
-Todos os trabalhos de LaTeX feitos por Matheus Farias
+Todos os trabalhos de $\LaTeX$ feitos por Matheus Farias
 
 ---
 ## adm
