@@ -1,5 +1,6 @@
 # Projetos LaTeX
-Todos os trabalhos de $\LaTeX$ feitos por Matheus Farias
+Todos os trabalhos de ![GitHub Logo](/latex.png)
+ feitos por Matheus Farias
 
 ---
 ## adm
