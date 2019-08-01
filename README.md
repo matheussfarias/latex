@@ -23,3 +23,10 @@ Pasta que envolve os relatorios da disciplina de **Eletrônica Digital**
 
 ## pcom
 Pasta que envolve os relatorios da disciplina de **Princípios de Comunicações**
+
+## templates
+Pasta que envolve os templates usados
+
+*  **templatebeamer** - Template para apresentações utilizando **beamer**
+*  **templategeral** - Template para relatórios **sem** split page
+*  **templatesplit** - Template para relatórios **com** split page
