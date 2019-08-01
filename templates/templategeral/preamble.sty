@@ -1,0 +1,40 @@
+\usepackage[margin=1in]{geometry} 
+\usepackage[brazil]{babel}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsthm,amssymb,amsfonts, physics}
+\usepackage{enumitem, verbatim}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{hyperref, color}
+\usepackage{float}
+\usepackage[nottoc,numbib]{tocbibind}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+\usepackage{listings}
+\titleformat{\chapter}[hang]{\bf\huge}{\thechapter}{2pc}{}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\date{\vspace{-5ex}}
+\lstset{language=Python}  
+\usepackage{pythonhighlight}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\theoremstyle{definition}
+    \newtheorem{problem}{Problema}
+    \newtheorem{dica}{Dica}
+    \newtheorem{gabarito}{Gabarito}
+    \newtheorem{defn}{Definição}
+    \newtheorem{teorema}{Teorema}
+    
+\pagenumbering{gobble}

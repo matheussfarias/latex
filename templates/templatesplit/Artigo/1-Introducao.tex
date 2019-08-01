@@ -1,0 +1,4 @@
+O projeto proposto foi para que se elabore uma rede neural MLP \textit{from scratch} utilizando o otimizador RMSProp, de tal forma que se analise a implementação. Para validar a rede neural, deve ser utilizado a validação \textit{10-Folds}. O conjunto de dados que será aplicado a rede neural é o conjunto de dados MNIST, onde tem-se 70046 imagens dos algarismos de $0$ a $9$ manuscritos. O objetivo do projeto é ter uma boa porcentagem de acertos no reconhecimento dos números utilizando uma rede neural simples. Segue abaixo a expressão de atualização dos pesos numa rede neural com otimização RMSProp:
+
+$$E[g^2]_t = E[g^2]_{t-1} + (1-\beta)\left(\frac{\partial {C}}{\partial {W}}\right)^2$$
+$$W_t = W_{t-1} - \frac{\eta}{\sqrt{E[g^2]_t}}\frac{\partial {C}}{\partial {W}}$$
